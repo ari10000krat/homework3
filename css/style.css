@@ -5,6 +5,63 @@
     font-size: 25px;
     font-weight: 200;
 }
+
+
+
+.menu{
+    list-style-type: none;
+    background-color: #3E5196;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    position: sticky;
+    top:0%;
+    left: 0px;
+    white-space: nowrap;
+    
+
+}
+.menu a.current, .menu a:hover,.menu img:hover{
+    background-color: #EE537C;
+    color: #3E5196;
+    
+}
+ .menu a:active,.menu img:active{
+    background-color: #EE537C;
+    color: #3E5196;
+}
+
+.menu ul{
+    background-color: #3E5196;
+
+    border-bottom: 5px solid #EE537C;
+
+
+}
+.menu img{
+    background-color: #3E5196;
+
+    display: inline;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+}
+.menu a{
+    text-decoration: none;
+    color:#EE537C;
+    background-color: #3E5196;
+    display: inline-block;
+    border-right: 2px solid #363671;
+    padding: 10px 10px;
+
+}
+.menu li{
+    display: inline;
+    background-color: #3E5196;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
 h1{
     text-align: center;
     font-size: 50px;
@@ -30,8 +87,16 @@ h2{
     padding-bottom: 0px;
 
 }
-footer{
-    text-align: center;
+.footer{
+    position: fixed; /* Фиксированное положение */
+    left: 0;
+    bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #A5BECF; /* Цвет фона */
+    color: #ffffff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    font-size: small;
+
 }
 
 table {
@@ -69,16 +134,3 @@ table {
     background-color: #335495;
     color: #FEFEFE;
     }
-
-
-/*index
-table{
-    padding: 10px;
-    text-align: center;
-    border-color: rgb(0, 255, 55);
-    border-width: 3px;
-    border-style: dashed;
-}
-td,th{
-    border-left: 1px ridge rgb(0, 255, 55);
-}*/
