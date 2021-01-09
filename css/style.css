@@ -1,11 +1,9 @@
 *{
-    background-color: #A5BECF;
     color:#040A1B;
     font-family:  "Fira Sans", serif;
     font-size: 25px;
     font-weight: 200;
 }
-
 
 
 .menu{
@@ -17,17 +15,15 @@
     top:0%;
     left: 0px;
     white-space: nowrap;
-    
 
 }
-.menu a.current, .menu a:hover,.menu img:hover{
+ .menu a:hover {/*,.menu img:hover */
     background-color: #EE537C;
     color: #3E5196;
-    
+    border: none;
 }
- .menu a:active,.menu img:active{
-    background-color: #EE537C;
-    color: #3E5196;
+nav a.active{
+    font-weight: bold;
 }
 
 .menu ul{
@@ -36,15 +32,6 @@
     border-bottom: 5px solid #EE537C;
 
 
-}
-.menu img{
-    background-color: #3E5196;
-
-    display: inline;
-    height: 40px;
-    padding: 0px;
-    margin: 0px;
-    vertical-align: middle;
 }
 .menu a{
     text-decoration: none;
@@ -60,9 +47,13 @@
     background-color: #3E5196;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+    
 }
 
 h1{
+    color: #EE537C;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3E5196;
     text-align: center;
     font-size: 50px;
     font-weight: 600;
@@ -72,6 +63,12 @@ h1{
 }
 
 h2{
+    color: #EE537C;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3E5196;
+
+
     font-family: 'Snell Roundhand', cursive;
     font-weight: 800;
     font-size: 40px;
@@ -80,6 +77,7 @@ h2{
 }
 
 .leftimg{
+    height: 300px;
     float: left;
     padding-left: 0px;
     padding-right: 10px;
@@ -87,29 +85,41 @@ h2{
     padding-bottom: 0px;
 
 }
-.footer{
-    position: fixed; /* Фиксированное положение */
-    left: 0;
-    bottom: 0; /* Левый нижний угол */
-    padding: 10px; /* Поля вокруг текста */
-    background: #A5BECF; /* Цвет фона */
-    color: #ffffff; /* Цвет текста */
-    width: 100%; /* Ширина слоя */
-    font-size: small;
+.rightimg{
+    height: 300px;
+    float: right;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 0px;
 
+}
+table.rightimg{
+    width: 30%;
+}
+.footer{
+    position: fixed; 
+    left: 0;
+    bottom: 0; 
+    padding: 10px; 
+    background: #A5BECF; 
+    color: #000; 
+    width: 100%; 
+    font-size: small;
+    height: 10px;
 }
 
 table {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 14px;
     max-width: 70%;
-    width: 100%;
+    width: 50%;
     text-align: center;
     border-collapse: collapse;
     margin: 10px 0px 10px 0px;
 
-  }
-  th {
+}
+th {
     font-size: 25px;
     font-weight: normal;
     background: #335495;
@@ -117,20 +127,73 @@ table {
     border-left: 1px solid #A5BECF;
     color: #FEFEFE;
     padding: 8px;
-  }
-  td {
+}
+td {
     background: #FEFEFE;
     border-right: 1px solid #A5BECF;
     border-left: 1px solid #A5BECF;
     color: #669;
     padding: 8px;
-  }
+}
 
-  tr:hover td{
-      background-color: #668BC4;
-      color: #FEFEFE;
-  }
-  td:hover tr{
+tr:hover td{
+    background-color: #668BC4;
+    color: #FEFEFE;
+}
+td:hover tr{
     background-color: #335495;
     color: #FEFEFE;
+}
+
+body.contact{
+    background-color: #335495;
+}
+body.home{
+    background-color: #668BC4;
+}
+body.about{
+    background-color: #668BC4;
+}
+
+form input,
+form textarea{
+    margin: 3px;
+    background-color: #335495;
+    color: white;
+
+}
+input:focus,
+textarea:focus{
+    background-color: #EE537C;
+    color: #335495;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-textarea-placeholder
+ {
+      color: white; 
     }
+
+.pressed-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgb(62, 81, 150), rgb(238, 83, 124));
+    background-position: 100% 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+  }
+.pressed-button:hover{
+    background: linear-gradient(45deg, rgb(238, 83, 124), rgb(62, 81, 150));
+}
+body.contact .footer{
+    background: linear-gradient(0deg, rgba(238,83,124,1) 0%, rgba(51,84,149,1) 100%);
+
+}
+body.about .footer,
+body.home .footer{
+    background: linear-gradient(0deg, rgba(238,83,124,1) 0%, rgba(102,139,196,1) 63%);
+}
