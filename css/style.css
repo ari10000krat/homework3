@@ -4,6 +4,7 @@
     font-size: 25px;
     font-weight: 200;
 }
+bo
 
 
 .menu{
@@ -11,11 +12,11 @@
     background-color: #3E5196;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    position: sticky;
     top:0%;
     left: 0px;
     white-space: nowrap;
-    margin-top: -30px;
+    position: sticky;
+
 }
  .menu a:hover {/*,.menu img:hover */
     background-color: #EE537C;
@@ -28,7 +29,7 @@ nav a.active{
 
 .menu ul{
     background-color: #3E5196;
-
+    padding-inline-start: 0px;
     border-bottom: 5px solid #EE537C;
 
 
@@ -97,7 +98,7 @@ h2{
 table.rightimg{
     width: 30%;
 }
-.footer{
+/* .footer{
     position: fixed; 
     left: 0;
     bottom: 0; 
@@ -107,7 +108,7 @@ table.rightimg{
     width: 100%; 
     font-size: small;
     height: 10px;
-}
+} */
 
 table {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
@@ -147,12 +148,15 @@ td:hover tr{
 
 body.contact{
     background-color: #335495;
+    margin: -30px 0px;
 }
 body.home{
     background-color: #668BC4;
+    margin: -30px 0px;
 }
 body.about{
     background-color: #668BC4;
+    margin: -30px 0px;
 }
 
 form input,
@@ -160,6 +164,8 @@ form textarea{
     margin: 3px;
     background-color: #335495;
     color: white;
+    border-radius: 10px;
+
 
 }
 input:focus,
@@ -189,11 +195,45 @@ textarea::-webkit-textarea-placeholder
 .pressed-button:hover{
     background: linear-gradient(45deg, rgb(238, 83, 124), rgb(62, 81, 150));
 }
+
+.footer{
+    background-color: #efefef;
+    padding: 1px 0px;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 100%; 
+
+}
+.copyright,
+.contacts{
+    margin: 0px;
+    display: inline-block;
+    width: 45%;
+}
+
+.copyright,
+.contacts-item{
+    color:#555559;
+}
+
+.contacts-item{
+    display: inline-block;
+}
+.contacts-item--bordered{
+    padding-left: 8px;
+    border-left: 1px solid #555559;
+    margin-right: 8px;
+}
+
 body.contact .footer{
+    position: fixed; 
+    left: 0;
+    bottom: 0; 
     background: linear-gradient(0deg, rgba(238,83,124,1) 0%, rgba(51,84,149,1) 100%);
 
 }
 body.about .footer,
 body.home .footer{
     background: linear-gradient(0deg, rgba(238,83,124,1) 0%, rgba(102,139,196,1) 63%);
-}
+} 
